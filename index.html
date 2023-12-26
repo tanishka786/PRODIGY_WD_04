@@ -6,10 +6,14 @@
     <title>My Protfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/assets/logo.png">
-    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3f50e1da80.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+       <!-- Javascript  -->
+       <script src="script.js"></script>
+ 
+       <!-- adding pages -->
        <div id="header">
         <div class="container">
             <nav>
@@ -42,30 +46,141 @@
                 <div class="aboutcol2">
                    <h1 class="subtitle">About Me</h1>
                    <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Harum excepturi nihil nesciunt repudiandae itaque distinctio blanditiis, 
-                    ab eaque laudantium, atque omnis corrupti mollitia,
-                    quaerat ipsam in officiis voluptatibus quisquam. Reprehenderit?
+                    Hello! I'm Tanishka Jayesh Das, 
+                    a passionate and motivated engineering student with a burning desire to innovate and make a positive impact through technology. 
+                    Currently pursuing a Computer Engineering degree at Vidyavardhini's College Of Engineering And Technology, 
+                    I am dedicated to harnessing the power of engineering to solve real-world challenges.
                    </p>
 
                    <div class="tab-titles">
-                         <p class="tab-links active-link">Skills</p>
-                         <p class="tab-links">Experience</p>
-                         <p class="tab-links">Education</p>
+                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                         <p class="tab-links" onclick="opentab('education')">Education</p>
                    </div>
                    
-                   <div class="tab-contents">
+                   <!-- skills -->
+                   <div class="tab-contents active-tab" id="skills">
                        <ul>
                         <li><span>Web development</span><br>Designing Web Interface</li>
-                        <li><span>Web development</span><br>Designing Web Interface</li>
-                        <li><span>Web development</span><br>Designing Web Interface</li>
+                        <li><span>Project Presentation</span><br>Effectively conveying complex information, ideas, and outcomes in a clear, compelling, and organized manner to diverse audiences.</li>
+                        <li><span>UI/UX Designing</span><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
                        </ul>
                    </div>
+
+                   <!-- Experience -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                     <li><span>2023 - Current</span><br>Corporate Co-ordinator at Microsoft Learn Students Club - Vcet</li>
+                     <li><span>2023</span><br>Web Development Intern at Prodigy Infotech </li>
+                     <li><span>2023</span><br>Web Development Intern at Codsoft</li>
+                     <li><span>2023</span><br>Web Development Intern at Bharat Intern</li>
+                    </ul>
+                </div>
+
+                <!-- Education -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                     <li><span>2023 - Current</span><br>Pursuing Bachelor's in Computer Engineering : VCET ,Vasai (Mumbai University)</li>
+                     <li><span>2022</span><br>Higher Secondary Education : MJC.edu.ac ,Umbergaon (Maharastra Board)</li>
+                     <li><span>202</span><br>Secondary Educaation : MBBI.edu.ac. ,Umbergaon (Maharastra Board) </li>
+                    </ul>
+                </div>
 
                 </div>
             </div>
            </div>
        </div>
+
+       <!------------------------------------------- services------------------------------------------------------>
+   
+       <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Web Designing</h2>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Id possimus assumenda perferendis laboriosam in, 
+                         voluptas quia? Exercitationem sed, 
+                         facere libero culpa corporis quidem non et. 
+                     </p>
+                     <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/Ux Designing</h2>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Id possimus assumenda perferendis laboriosam in, 
+                         voluptas quia? Exercitationem sed, 
+                         facere libero culpa corporis quidem non et. 
+                     </p>
+                     <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>GAME Development using html, css & Javascript </h2>
+                     <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Id possimus assumenda perferendis laboriosam in, 
+                         voluptas quia? Exercitationem sed, 
+                         facere libero culpa corporis quidem non et. 
+                     </p>
+                     <a href="#">Learn more</a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------portfolio------------------------------------------->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                
+                <div class="work">
+                    <img src="/assets/work1.png" >
+                    <div class="layer">
+                        <h3>Landing page </h3>
+                        <p>
+                            The Landing Page is made up of html,css,js languages and it's responsive with a Hamburger button .
+                        </p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/assets/work5.jpg" >
+                    <div class="layer">
+                        <h3>Weather app </h3>
+                        <p>
+                            The Weather app is made up of html,css,js languages and it's responsive with a Hamburger button .
+                        </p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="/assets/work6.jpg" >
+                    <div class="layer">
+                        <h3>Tic Tac Toe game WebApp</h3>
+                        <p>
+                            The tic tac toe is made up of html,css,js languages and it's responsive with a Hamburger button .
+                        </p>
+                       <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <footer>
