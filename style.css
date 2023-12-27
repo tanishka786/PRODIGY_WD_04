@@ -151,7 +151,7 @@ nav ul li a:hover::after
     content: '';
     width:0;
     height:3px;
-    background:#80b918;
+    background:#6cdddd;
     position:absolute;
     left: 0;
     bottom: -8px;
@@ -173,7 +173,7 @@ nav ul li a:hover::after
 
 .tab-contents ul li span
 {
-    color:#aacc00;
+    color:#277270;
     font-size: 14px;
 }
 
@@ -268,13 +268,14 @@ nav ul li a:hover::after
    width: 100%;
    display: block;
    border-radius: 10px;
+   transition:transform 0.5s;
 }
 
 .layer
 {
   width:100%;
-  height: 100%;
-  background: linear-gradient( rgba(0,0,0,0.6),#6cdddd);
+  height: 0;
+  background: linear-gradient( rgba(0,0,0,0.6),#0f4343);
   border-radius: 10px;
   position: absolute;
   left:0;
@@ -287,6 +288,8 @@ nav ul li a:hover::after
   padding:0 40px;
   text-align: center;
   font-size: 14px;
+  transition:height 0.5s;
+
 }
 
 .layer h3
@@ -309,4 +312,110 @@ nav ul li a:hover::after
     border-radius:10px;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.work:hover img
+{
+   transform: scale(1.1);
+}
+
+.work:hover .layer
+{
+    height: 100%;
+}
+
+.btn
+{
+    display: block;
+    margin: 50px auto;
+    width:fit-content;
+    border:2px solid #35c1bc;
+    padding:14px 50px;
+    border-radius:6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s ;
+
+}
+
+.btn:hover
+{
+   background:#0f4343;
+}
+
+/* -------------------------------------------------Contact---------------------------------------------------------------- */
+
+.contact-left
+{
+   flex-basis: 35%;
+}
+
+contact-right
+{
+   flex-basis: 60%;
+}
+
+.contact-left p
+{
+   margin-top:30px ;
+}
+
+.contact-left p i
+{
+    color: aqua;;
+    margin-right: 15px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.social-icons
+{
+    margin-top: 30px;
+}
+
+.social-icons a
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right:15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s ;
+}
+
+.social-icons a:hover
+{
+  color:aqua;
+  transform: translateY(-5px);
+}
+
+.btn.btn2
+{
+    display: inline-block;
+    background: #0f4343;
+}
+
+.contact-right form
+{
+    width:100%;
+}
+
+form input, form textarea
+{
+    width:100%;
+    border: 0;
+    outline:none;
+    background:#262626;
+    padding:15px;
+    margin:15px 0;
+    font-size: 18px;
+    border-radius:6px;
+}
+
+form.btn2
+{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor:pointer;
 }
