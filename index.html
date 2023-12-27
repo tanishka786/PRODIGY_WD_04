@@ -18,13 +18,15 @@
         <div class="container">
             <nav>
                 <image src="/assets/tanlogo1.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Serices</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
                <!------------------------------------------------------- home page------------------------------------------------------------------------------------------>
             <div class="header-text">
@@ -202,12 +204,13 @@
                 </div>
                 
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Full Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Leave your message here:"></textarea>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Leave your message here:"></textarea>
                         <button type="submit"  class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>

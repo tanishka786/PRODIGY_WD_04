@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
    background:#080808;
@@ -410,6 +415,7 @@ form input, form textarea
     margin:15px 0;
     font-size: 18px;
     border-radius:6px;
+    color: #6cdddd;
 }
 
 form.btn2
@@ -445,4 +451,117 @@ form.btn2
 .fa-regular.fa-hand-peace
 {
     color:burlywood;
+}
+
+/* ------------------------------------------------------css for small screen (responsiveness)------------------------------------------------------------ */
+
+.fa-solid.fa-solid.fa-square-xmark
+{
+  display:none;
+}
+
+.fa-solid.fa-bars
+{
+    display: none;
+}
+
+@media only  screen and (max-width: 600px)
+{
+    #header
+    {
+        background-image: url(/assets/portraitlong.jpg);
+    }
+
+    .header-text
+    {
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1
+    {
+        font-size: 30px;
+    }
+
+    .fa-solid.fa-solid.fa-square-xmark
+    {
+        display: block;
+        font-size: 25px;
+    }
+
+    .fa-solid.fa-bars
+    {
+        display: block;
+        font-size: 25px;
+    }
+   
+    nav ul 
+    {
+        background: #0f4343;
+        position: fixed;
+        top:0;
+        right: -200px;
+        width:200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li
+    {
+      display: block;
+      margin:25px;
+    }
+    
+    nav ul .fa-solid.fa-solid.fa-square-xmark
+    {
+        position: absolute;
+        top:25px;
+        left:25px;
+        cursor:pointer;
+    }
+
+    .subtitle
+    {
+      font-size: 40px;
+    }
+
+    .aboutcol1,.aboutcol2
+    {
+        flex-basis: 100%;
+    }
+
+    .aboutcol1
+    {
+        margin-bottom: 30px;
+    }
+
+    .aboutcol2
+    {
+        font-size: 14px;
+    }
+
+    .tab-links
+    {
+      font-size: 16px;
+      margin-right:20px ;
+    } 
+    .contact-left,.contact-right
+    {
+        flex-basis: 100%;
+    }
+    
+    .copyright
+    {
+        font-size: 30px;
+    }
+
+}
+
+#msg
+{
+    color:#6cdddd;
+    margin-top: -40px;
+    display: block;
 }
