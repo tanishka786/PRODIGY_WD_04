@@ -300,7 +300,7 @@ nav ul li a:hover::after
 .layer h3
 {
   font-weight:500;
-  margin-bottom: 20px;
+  margin-bottom :2px;
   font-size: 30px;
 }
 
@@ -332,7 +332,7 @@ nav ul li a:hover::after
 .btn
 {
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     width:fit-content;
     border:2px solid #35c1bc;
     padding:14px 50px;
