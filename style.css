@@ -474,6 +474,15 @@ form.btn2 {
 
 #msg {
     color: #6cdddd;
-    margin-top: -40px;
+    margin-top: -168px;
     display: block;
+    padding: 5px;
+    position: absolute;
+    background-color: #154057a8;
+    border-radius: 6px;
+}
+
+#gform-submit {
+    cursor: pointer;
+    margin-bottom: 65px;
 }

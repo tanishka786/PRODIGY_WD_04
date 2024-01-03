@@ -28,7 +28,7 @@ function closemenu() {
 //    script for google excel sheet
 const scriptURL =
     "https://script.google.com/macros/s/AKfycbw50AhA9enVWR-4e2VJ_eKFUEYVp5RKHtzG0q43OpVVKlKf5QRPQDSHRP4HyOG-dydMhw/exec";
-const form = document.forms["submit-to-google-sheet"];
+const form = document.getElementById("gform");
 const msg = document.getElementById("msg");
 
 form.addEventListener("submit", e => {
